@@ -10,8 +10,8 @@
     <number>1</number>
   </desktops>
   <margins>
-    <top>100</top>
-    <bottom>50</bottom>
+    <top>103</top>
+    <bottom>54</bottom>
     <left>50</left>
     <right>50</right>
   </margins>
@@ -60,6 +60,14 @@
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
 	<command>amixer -D pulse set Master 7%-</command>
+      </action>
+      <action name="Execute">
+	<command>cyanbar.py -u volume</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+	<command>amixer -D pulse set Master toggle</command>
       </action>
       <action name="Execute">
 	<command>cyanbar.py -u volume</command>
@@ -148,7 +156,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-	<command>custom_dmenu</command>
+	<command>cyanbar.py -u launcher</command>
       </action>
       <action name="Execute">
 	<command>cyanbar.py -u apps</command>
