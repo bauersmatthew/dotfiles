@@ -16,9 +16,19 @@ let g:pymode_python = 'python3'
 let g:pymode_folding = 0
 let g:pymode_indent = 1
 let g:pymode_breakpoint = 0
+let g:pymode_rope = 0
+" c++
+Plug 'octol/vim-cpp-enhanced-highlight'
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_scope_highlight = 1
+" let g:pymode_doc = 0
 " other
 Plug 'godlygeek/tabular'
 Plug 'Yggdroot/LeaderF'
+Plug 'dag/vim-fish'
+Plug 'vim-scripts/gtags.vim'
 call plug#end()
 
 " settings
@@ -52,15 +62,17 @@ nnoremap <Leader>A :Tabular /:\zs<cr>
 vnoremap <Leader>A :Tabular /:\zs<cr>
 nnoremap <Leader>t :TagbarToggle<cr>
 nnoremap <Leader>y "+y
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+nnoremap <Leader>go :Gtags 
+nnoremap <Leader>gj :cn<cr>
+nnoremap <Leader>gk :cp<cr>
+nnoremap <Leader>gq :cclose<cr>
 
 " C/C++ shortcuts
 au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> #i #include
 au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> #d #define
-au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> string std::string
-au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> vector std::vector
-au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> scon std::string const&
-au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> cout std::cout
-au BufRead *.c,*.cpp,*.h,*.hpp ia <buffer> cin std::cin
 au BufRead *.c,*.cpp,*.h,*.hpp nnoremap <buffer> gI /#include<cr>:nohlsearch<cr>}k
 
 " Python shortcuts
