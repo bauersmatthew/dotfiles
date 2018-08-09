@@ -1,0 +1,44 @@
+! URXVT STUFF
+URxvt*font: xft:Noto Mono:style=Regular:size=20
+Xft.antialias: true
+URxvt.scrollBar: false
+URxvt.cursorColor: #657b83
+URxvt.background: #2a2a2a
+URxvt.foreground: #ffffff
+! black
+URxvt.color0: #2a2a2a
+! bright black
+URxvt.color8: #4c4c4c
+! red
+URxvt.color1: #96546c
+! bright red
+URxvt.color9: #bd5a4e
+! green
+URxvt.color2: #818f62
+! bright green
+URxvt.color10: #818f62
+! yellow
+URxvt.color3: #818f62
+! bright yellow
+URxvt.color11: #818f62
+! blue
+URxvt.color4: #1785da
+! bright blue
+URxvt.color12: #718bb6
+! magenta
+URxvt.color5: #a27ea4
+! bright magenta
+URxvt.color13: #e81050
+! cyan
+URxvt.color6: #4394a7
+! bright cyan
+URxvt.color14: #4394a7
+! white
+URxvt.color7: #eeeeee
+! bright white
+URxvt.color15: #ffffff
+
+URxvt.internalBorder: 56
+
+! EMACS STUFF
+Emacs.font: Noto Mono-18
