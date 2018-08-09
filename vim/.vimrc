@@ -17,13 +17,16 @@ let g:pymode_folding = 0
 let g:pymode_indent = 1
 let g:pymode_breakpoint = 0
 let g:pymode_rope = 0
+" let g:pymode_doc = 0
 " c++
 Plug 'octol/vim-cpp-enhanced-highlight'
 let g:cpp_experimental_template_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_scope_highlight = 1
-" let g:pymode_doc = 0
+" latex
+Plug 'lervag/vimtex'
+let g:vimtex_view_method = 'zathura'
 " other
 Plug 'godlygeek/tabular'
 Plug 'Yggdroot/LeaderF'

@@ -5,179 +5,145 @@
   </placement>
   <theme>
     <name>CGOB</name>
+    <cornerRadius>6</cornerRadius>
+    <titleLayout></titleLayout>
   </theme>
   <desktops>
     <number>1</number>
   </desktops>
   <margins>
     <top>103</top>
-    <bottom>54</bottom>
+    <bottom>47</bottom>
     <left>50</left>
     <right>50</right>
   </margins>
   <keyboard>
-    <keybind key="A-Tab">
-      <action name="NextWindow">
-	<linear>yes</linear>
-	<finalactions>
-	  <action name="Focus" />
-	  <action name="Raise" />
-	  <action name="Execute">
-	    <command>cyanbar.py -u apps</command>
-	  </action>
-	</finalactions>
-      </action>
-    </keybind>
     <keybind key="Print">
       <action name="Execute">
-	<command>scrot -e 'mv $f ~/Downloads/'</command>
+	    <command>scrot -e 'mv $f ~/Downloads/'</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-	<command>custom_backlight up</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u brightness</command>
+	    <command>custom_backlight up</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-	<command>custom_backlight down</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u brightness</command>
+	    <command>custom_backlight down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-	<command>amixer -D pulse set Master 7%+</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u volume</command>
+        <command>amixer -D pulse set Master 7%+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-	<command>amixer -D pulse set Master 7%-</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u volume</command>
+	    <command>amixer -D pulse set Master 7%-</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-	<command>amixer -D pulse set Master toggle</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u volume</command>
+	    <command>amixer -D pulse set Master toggle</command>
       </action>
     </keybind>
     <keybind key="W-A-Left">
       <action name="MoveResizeTo">
-	<x>0</x>
-	<y>0</y>
-	<width client="yes">49%</width>
-	<height client="yes">100%</height>
+        <x>0</x>
+        <y>0</y>
+        <width>49%</width>
+        <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-A-Right">
       <action name="MoveResizeTo">
-	<x>51%</x>
-	<y>0</y>
-	<width client="yes">49%</width>
-	<height client="yes">100%</height>
+        <x>51%</x>
+        <y>0</y>
+        <width>49%</width>
+        <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-Up">
       <action name="MoveResizeTo">
         <y>0</y>
-        <height client="yes">49%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-Down">
       <action name="MoveResizeTo">
         <y>51%</y>
-        <height client="yes">49%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-Left">
       <action name="MoveResizeTo">
         <x>0</x>
-        <width client="yes">49%</width>
+        <width>49%</width>
       </action>
     </keybind>
     <keybind key="W-Right">
       <action name="MoveResizeTo">
         <x>51%</x>
-        <width client="yes">49%</width>
+        <width>49%</width>
       </action>
     </keybind>
-     <keybind key="W-A-Up">
+    <keybind key="W-A-Up">
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width client="yes">100%</width>
-        <height client="yes">100%</height>
+        <width>100%</width>
+        <height>100%</height>
       </action>
     </keybind>
-     <keybind key="W-A-Down">
+    <keybind key="W-A-Down">
       <action name="Iconify"/>
     </keybind>
     <keybind key="W-space">
       <action name="MoveResizeTo">
         <x>10%</x>
         <y>10%</y>
-        <width client="yes">80%</width>
-        <height client="yes">80%</height>
+        <width>80%</width>
+        <height>80%</height>
       </action>
     </keybind>
     <keybind key="C-W-A-Left">
       <action name="MoveResizeTo">
-	<x>7%</x>
-	<width client="yes">35%</width>
-	<y>20%</y>
-	<height client="yes">60%</height>
+        <x>7%</x>
+        <width>35%</width>
+        <y>20%</y>
+        <height>60%</height>
       </action>
     </keybind>
     <keybind key="C-W-A-Right">
       <action name="MoveResizeTo">
-	<x>57%</x>
-	<width client="yes">35%</width>
-	<y>20%</y>
-	<height client="yes">60%</height>
+        <x>57%</x>
+        <width>35%</width>
+        <y>20%</y>
+        <height>60%</height>
       </action>
     </keybind>
     <keybind key="W-BackSpace">
       <action name="Close"/>
+    </keybind>
+    <keybind key="W-bracketleft">
       <action name="Execute">
-	<command>cyanbar.py -u apps</command>
+        <command>firefox-bin</command>
       </action>
     </keybind>
-    <keybind key="W-Return">
+    <keybind key="W-bracketright">
       <action name="Execute">
-	<command>cyanbar.py -u launcher</command>
-      </action>
-      <action name="Execute">
-	<command>cyanbar.py -u apps</command>
+        <command>urxvt</command>
       </action>
     </keybind>
   </keyboard>
   <mouse>
     <context name="Client Desktop">
       <mousebind button="Left Right" action="Press">
-	<action name="Focus" />
-	<action name="Raise" />
-	<action name="Unshade" />
-	<action name="Execute">
-	  <command>cyanbar.py -u apps</command>
-	</action>
+        <action name="Focus" />
+        <action name="Raise" />
+        <action name="Unshade" />
       </mousebind>
     </context>
   </mouse>
-  <applications>
-    <application name="*">
-      <decor>no</decor>
-    </application>
-  </applications>
 </openbox_config>

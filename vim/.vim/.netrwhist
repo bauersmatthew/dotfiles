@@ -1,2 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/cyangekko/prg/CS1_placement_exam_Matthew_Bauer/problem1'
+let g:netrw_dirhist_2='/home/cyangekko/prg/sbbot/src'
